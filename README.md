@@ -31,6 +31,7 @@ services:
       - USERNAME=
       - PASSWORD=
       - TOKEN=
+      - SERVER_ADMINS=[] # JSON array of usernames
     stop_grace_period: 30s
 ```
 

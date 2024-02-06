@@ -24,3 +24,7 @@ cat <<EOF > $SETTINGS_PATH
 }
 EOF
 cat $SETTINGS_PATH
+
+echo "Setting server admins"
+echo "$SERVER_ADMINS" > /opt/factorio/server-adminlist.json
+cat /opt/factorio/server-adminlist.json

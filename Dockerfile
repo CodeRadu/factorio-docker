@@ -15,6 +15,7 @@ ENV VISIBILITY_LAN=true
 ENV USERNAME=""
 ENV PASSWORD=""
 ENV TOKEN=""
+ENV SERVER_ADMINS="[]"
 
 LABEL org.opencontainers.image.source="https://github.com/CodeRadu/factorio-docker"
 
