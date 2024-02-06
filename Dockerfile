@@ -16,6 +16,8 @@ ENV USERNAME=""
 ENV PASSWORD=""
 ENV TOKEN=""
 
+LABEL org.opencontainers.image.source="https://github.com/CodeRadu/factorio-docker"
+
 RUN apt update && apt upgrade -y && apt install -y xz-utils
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v${S6_OVERLAY_VERSION}/s6-overlay-noarch.tar.xz /tmp
