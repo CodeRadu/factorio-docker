@@ -1,0 +1,23 @@
+services:
+  factorio:
+    build: .
+    volumes:
+      - ./data/saves:/opt/factorio/saves
+      - ./data/mods:/opt/factorio/mods
+    ports:
+      - "34197:34197/udp"
+    environment:
+      - SAVE_FILE=save.zip
+      - SERVER_NAME=Factorio Server
+      - SERVER_DESCRIPTION=Factorio Server
+      - MAX_PLAYERS=0
+      - GAME_PASSWORD=
+      - REQUIRE_USER_VERIFICATION=true
+      - AUTOSAVE_SLOTS=5
+      - AUTOSAVE_INTERVAL=10
+      - VISIBILITY_PUBLIC=false
+      - VISIBILITY_LAN=true
+      - USERNAME=
+      - PASSWORD=
+      - TOKEN=
+    stop_grace_period: 30s

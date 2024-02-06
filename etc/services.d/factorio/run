@@ -1,0 +1,12 @@
+#! /command/with-contenv bash
+
+echo "Using save file $SAVE_FILE"
+
+SAVE_PATH="/opt/factorio/saves/$SAVE_FILE"
+
+SETTINGS_PATH="/opt/factorio/data/server-settings.json"
+
+ENTRYPOINT="/opt/factorio/bin/x64/factorio"
+
+echo "Starting Factorio"
+exec $ENTRYPOINT --start-server $SAVE_PATH --server-settings $SETTINGS_PATH
