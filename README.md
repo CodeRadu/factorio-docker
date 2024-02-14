@@ -11,7 +11,7 @@ This is a small project for running a Factorio server inside a docker container.
 version: "3"
 services:
   factorio:
-    image: ghcr.io/coderadu/factorio-docker:latest
+    image: ghcr.io/coderadu/factorio-docker:stable
     ports:
       - "34197:34197/udp"
     volumes:
